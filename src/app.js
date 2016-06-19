@@ -1,7 +1,9 @@
 import React from 'react'
 import { render } from 'react-dom'
+import AppContainer from './containers/AppContainer'
+import store from './stores'
 
-render(<AppContainer />, document.getElementById('container'))
+render(<AppContainer store={store} />, document.getElementById('container'))
 
 
 /*
